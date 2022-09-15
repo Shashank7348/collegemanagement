@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Fees</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            form {
+                border:5px solid black;
+                margin:100px 700px;
+                padding: 50px 5px;
+                background: white;
+               
+            }
+            body{
+            background: linear-gradient(120deg,#2980b9,#8e44ad);
+            }
+           
+            
+/*            
+            body{
+                margin: 0;
+                padding:0;
+                font-family: montserrat;
+                background: linear-gradient(120deg,#2980b9,#8e44ad);
+                height:100vh;
+                overflow: hidden;
+                text-align: center;
+
+            }
+            .center{
+                position: absolute;
+                top:50%;
+                left:50%
+                    transform:translate(-50%, -50%);
+                width: 400px;
+                background: white;
+                border-radius:10px;
+            }
+            .center h1{
+                text-align: center;
+                padding: 0 0 20px 0;
+                border-bottom: 1px solid silver;
+
+            }
+            .center form{
+                padding: 0 40px;
+                box-sizing: border-box;
+                text-align: center;
+
+            }
+*/
+        </style>
+    </head>
+    <body>
+    <center>
+        <form method="post" action="Fees">
+            <div class="center">
+                <h1>Fees Detail</h1>
+                <pre>
+                Name: <input type="text" name="name_adm"><br>
+      Contact Number: <input type="number" name="number_adm"><br>
+                UID:<input type="text" name="uid_adm"><br>
+                Course:<input type="text" name="course"><br>
+                Email:<input type="email" name="email"><br>
+              Address: <textarea name="address"></textarea><br>
+                Fees :<input type="text" name="Fees_adm"><br>
+                <input type="submit" name="submit" value="Submit" class="action-button"><br>
+                <button><a href="newhtml.html">Check</a></button>
+                </pre>
+            </div>
+        </form>
+    </center>
+
+</body>
+</html>

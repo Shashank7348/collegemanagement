@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Admission Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+            * {margin: 0; padding: 0;}
+
+            html {
+                height: 100%;
+                background-color: #cccccc;
+            }
+
+            body {
+                font-family: montserrat, arial, verdana;
+            }
+            #msform {
+                width: 900px;
+                margin: 50px auto;
+                text-align: center;
+                position: relative;
+            }
+            #msform fieldset {
+                background: white;
+                border: 0 none;
+                border-radius: 3px;
+                box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+                padding: 20px 30px;
+                box-sizing: border-box;
+                width: 80%;
+                margin: 0 10%;
+                position: relative;
+            }
+            #msform fieldset:not(:first-of-type) {
+                display: none;
+            }
+            #msform input, #msform textarea {
+                padding: 15px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                margin-bottom: 10px;
+                width: 100%;
+                box-sizing: border-box;
+                font-family: montserrat;
+                color: #2C3E50;
+                font-size: 13px;
+            }
+            #msform .action-button {
+                width: 100px;
+                background: #ff6633;
+                font-weight: bold;
+                color: white;
+                border: 0 none;
+                border-radius: 1px;
+                cursor: pointer;
+                padding: 10px 5px;
+                margin: 10px 5px;
+            }
+            #msform .action-button:hover, #msform .action-button:focus {
+                box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+            }
+            .fs-title {
+                font-size: 15px;
+                text-transform: uppercase;
+                color: #ff6633;
+                margin-bottom: 10px;
+
+            }
+            .fs-subtitle {
+                font-weight: normal;
+                font-size: 13px;
+                color: #ff6633;
+                margin-bottom: 20px;
+            }
+
+            .img {
+                box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;}
+            th, td {padding: 8px;
+                    text-align: left;
+                    border-bottom: 1px solid #DDD;}
+            tr:hover {background-color: #D6EEEE;}
+        </style>
+    </head>
+    <body>
+        <h1>Student Admission</h1>
+        
+
+        <table>
+            <th>Course Name</th>
+            <th>Duration </th>
+            <th>Fees</th>
+
+            <tr>
+                <td>B.Sc IT</td>
+                <td>75000</td>
+                <td>3 Years</td>              
+
+            </tr>
+            <tr>
+                <td>B.Sc DS</td>
+
+                <td>55000</td>
+                <td>3 Years</td>
+            </tr>
+            <tr>
+                <td>B.Sc CS</td>
+
+                <td>73000</td>
+                <td>3 Years</td>
+            </tr>
+            <tr>
+                <td>B.Sc Bio Tech</td>
+
+                <td>70000</td>
+                <td>3 Years</td>
+            </tr>
+            <tr>
+                <td>B.Sc Chem</td>
+
+                <td>45000</td>
+                <td>3 Years</td>
+            </tr>
+            <tr>
+                <td>B.Sc Maths</td>
+
+                <td>45000</td>
+                <td>3 Years</td>
+            </tr>
+            <tr>
+                <td>BAF</td>
+
+                <td>65000</td><td>3 Years</td>
+            </tr>
+
+            <tr>
+                <td>B.E</td>
+
+                <td>55000</td> <td>3 Years</td>               
+            </tr>
+        </table><br><br><br>
+        
+        <form method="post" action="Admission" id="msform">
+            <fieldset>
+                Name: <input type="text" name="name_adm"><br>
+                Contact Number: <input type="number" name="number_adm"><br>
+                UID: <input type="text" name="uid_adm"><br>
+                Course: <input type="text" name="course"><br>
+                Email: <input type="email" name="email"><br>
+                Address: <textarea name="address"></textarea><br>
+                Password: <input type="password" name="pass"><br>
+                Confirm Password: <input type="password" name="conf_pass"><br>
+                <input type="submit" name="submit" value="Admission" class="action-button">
+            </fieldset>
+        </form>
+        
+    </body>
+</html>
